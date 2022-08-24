@@ -6,6 +6,15 @@
     <title>Bootstrap demo</title>
   </head>
   <body>
-    <h1>Testing, attention please!</h1>
+    <div id="main">
+      <h1>Testing</h1>
+    </div>
   </body>
+
+  <script>
+    const main = document.getElementById("main");
+    main.addEventListener("click", () => {
+      main.innerHTML = "<h1>Event</h1>";
+    });
+  </script>
 </html>
